@@ -7,7 +7,7 @@ import { PokemonPaginateResponse, SimplePokemon, Result } from '../interfaces/po
 export const usePokemonPaginated = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [simplePokemonList, setSimplePokemonList] = useState<SimplePokemon[]>([])
-  const nextPageUrl = useRef('https://pokeapi.co/api/v2/pokemon?limit=40')
+  const nextPageUrl = useRef('https://pokeapi.co/api/v2/pokemon?limit=20')
 
   const loadPokemons = async () => {
     setIsLoading(true)

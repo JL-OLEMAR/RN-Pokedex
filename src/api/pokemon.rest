@@ -1,2 +1,7 @@
-### Mostrar los 40° primeros pokemos
-https://pokeapi.co/api/v2/pokemon?limit=40
+# Mostrar los 40° primeros pokemos
+GET https://pokeapi.co/api/v2/pokemon?limit=20
+
+###
+
+# Mostrar pokemon por id
+GET https://pokeapi.co/api/v2/pokemon/25

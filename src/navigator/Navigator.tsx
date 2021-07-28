@@ -1,11 +1,17 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/explicit-function-return-type, @typescript-eslint/consistent-type-definitions */
 import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import { Home } from '../screens/Home'
 import { Pokemon } from '../screens/Pokemon'
+import { SimplePokemon } from '../interfaces/pokemon'
 
-const Stack = createStackNavigator()
+export type RootStackParams = {
+  Home: undefined
+  Pokemon: {simplePokemon: SimplePokemon, color: string}
+}
+
+const Stack = createStackNavigator<RootStackParams>()
 
 export const Navigator = () => {
   return (
