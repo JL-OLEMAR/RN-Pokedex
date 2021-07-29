@@ -5,3 +5,7 @@ GET https://pokeapi.co/api/v2/pokemon?limit=20
 
 # Mostrar pokemon por id
 GET https://pokeapi.co/api/v2/pokemon/25
+
+###
+
+GET https://pokeapi.co/api/v2/pokemon?limit=1200

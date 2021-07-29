@@ -5,6 +5,8 @@
 yarn.lock
 .eslintcache
 .vscode/*
+*/.vscode/*
+/.vscode/
 .react
 
 # Xcode
